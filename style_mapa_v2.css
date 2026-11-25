@@ -1,0 +1,177 @@
+/* Todas las salas */
+[id^="SALA-"] {
+  cursor: pointer;
+}
+
+/*Hoover específico para las escaleras*/
+[id^="ir-planta"],
+[id^="volver-planta1"] {
+  cursor:pointer;
+  transition: fill 0.25s ease, stroke-width 0.25s ease;
+}
+
+[id^="ir-planta"]:hover,
+[id^="volver-planta1"]:hover {
+  fill: #FFB93F;
+  stroke-width: 7;
+}
+
+
+/* Transición de color */
+[id^="SALA-"] path,
+[id^="SALA-"] rect,
+[id^="SALA-"] polygon {
+  transition: fill 0.25s ease, stroke 0.25s ease;
+}
+
+
+/* Al pasar el ratón por una sala */
+[id^="SALA-"]:hover path,
+[id^="SALA-"]:hover rect,
+[id^="SALA-"]:hover circle,
+[id^="SALA-"]:hover polygon {
+  fill: #F63D53;
+}
+
+/* Engrosar línea */
+[id^="SALA-"]:hover path,
+[id^="SALA-"]:hover rect,
+[id^="SALA-"]:hover circle,S
+[id^="SALA-"]:hover polygon {
+  fill: #F63D53;
+  stroke: #F63D53;
+  stroke-width: 2px;
+}
+/*Propiedades generales contenido desplegable*/
+.map-app {
+  width: 70vw;
+  height: 70vw;
+  display: flex;
+
+  position: relative;
+}
+
+/*Sidebar*/
+.sidebar {
+  width: 360px;
+  height: 100vh;
+
+  background: #fff;
+
+  border-right: 1px solid #ddd;
+
+  position: relative;
+
+  z-index: 20;
+
+  transform: translateX(-100%);
+
+  transition: transform 0.25s ease;
+
+  flex-shrink: 0;
+
+  padding: 16px 20px;
+}
+
+.sidebar.open {
+
+  transform: translateX(0);
+}
+
+/*Contenedor*/
+
+.map-container {
+  flex: 1;
+
+  height: 100%;
+
+  position: relative;
+
+  overflow: hidden;
+
+  display: block;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+/*Planos*/
+.Plano {
+  display:none;
+}
+
+.Plano.activo {
+  display: block;
+}
+/*Imagen sidebar*/
+#panel-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: none;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+
+/*Propiedades SVG Planta Baja*/
+
+.st0 {
+  fill: #c0e2de;
+}
+
+.st1, .st2, .st3 {
+  fill: #006756;
+}
+
+.st4 {
+   fill: #fff;
+}
+
+.st2, .st3 {
+  stroke: #006756;
+  stroke-miterlimit: 10;
+}
+
+.st5 {
+  fill: #c1e2de;
+}
+
+.st3 {
+  stroke-width: .75px;
+}
+
+/*Propiedades SVG Planta Menos Uno*/
+
+.st0 {
+   fill: #c0e2de;
+}
+
+.st1 {
+   fill: #006756;
+}
+
+.st2 {
+  fill: #fff;
+}
+
+/*Background*/
+body {background-color: #F3FAF9;
+}
+
+/*Textos*/
+
+h1 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 2.125rem;
+  font-weight: 400;
+  color: #2cb29b;
+}
+
+p {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #2cb29b;
+}

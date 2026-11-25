@@ -31,7 +31,8 @@ const mapaData = {
 
 	"SALA-ENT": {
 		title: "Entrada",
-		description: "Te damos la bienvenida a las instalaciones de LB:39. Esperamos que tu estancia trabajando con nosotros te resulte lo más amena posible."
+		description: "Te damos la bienvenida a las instalaciones de LB:39. Esperamos que tu estancia trabajando con nosotros te resulte lo más amena posible.",
+		image: "Bunmoth4.png"
 	},
 
 	"SALA-COM": {
